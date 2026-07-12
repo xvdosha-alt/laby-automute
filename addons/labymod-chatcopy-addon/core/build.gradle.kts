@@ -1,0 +1,4 @@
+dependencies {
+    labyProcessor()
+    labyApi("core")
+}

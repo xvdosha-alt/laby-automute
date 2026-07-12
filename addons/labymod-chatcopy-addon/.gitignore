@@ -1,0 +1,43 @@
+# Java
+*.class
+*.log
+*.ctxt
+.mtj.tmp/
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+hs_err_pid*
+
+# IDE
+/.idea/
+.idea_modules/
+*.iws
+out/
+run/
+run/**
+
+# Gradle
+.gradle/
+/**/build/
+gradle-app.setting
+!gradle/wrapper/gradle-wrapper.jar
+.gradletasknamecache
+docs/generated/
+
+# Build output
+/dist/
+
+# OS
+.DS_Store
+
+# LabyGradle generated (keep sources under src/main/resources)
+build-data.txt
+**/build/**/.assetsroot
+**/build/**/resources_index.json
+**/build/**/access_widener_index.json
+
+# Local libs (if any)
+!libs/*.jar

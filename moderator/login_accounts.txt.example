@@ -1,0 +1,4 @@
+# nick:password — по одной паре на строку
+# nick password  (через пробел тоже работает)
+nick1:password1
+nick2:password2

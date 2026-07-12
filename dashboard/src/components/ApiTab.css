@@ -1,0 +1,171 @@
+.api-tab {
+  height: 100%;
+  min-height: 0;
+}
+
+.api-grid {
+  display: grid;
+  grid-template-columns: minmax(300px, 380px) 1fr;
+  gap: 1.25rem;
+  height: 100%;
+  min-height: 0;
+}
+
+.api-side,
+.api-response {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.api-subtitle {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.api-client-pick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.api-client-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.25);
+  color: var(--text);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+}
+
+.api-client-btn.active {
+  border-color: rgba(56, 189, 248, 0.5);
+  background: rgba(56, 189, 248, 0.12);
+}
+
+.api-client-btn .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.api-client-btn .dot.on {
+  background: #4ade80;
+}
+
+.api-client-btn .dot.off {
+  background: #64748b;
+}
+
+.api-fields {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  gap: 0.75rem;
+}
+
+.api-fields label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.api-fields input {
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+}
+
+.api-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.api-action-btn {
+  padding: 0.55rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: rgba(56, 189, 248, 0.08);
+  color: var(--text);
+  text-align: left;
+  font-size: 0.88rem;
+  transition: background 0.15s;
+}
+
+.api-action-btn:hover:not(:disabled) {
+  background: rgba(56, 189, 248, 0.18);
+}
+
+.api-action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.api-action-btn.primary {
+  background: rgba(167, 139, 250, 0.15);
+  border-color: rgba(167, 139, 250, 0.35);
+}
+
+.api-say {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.api-say input {
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--text);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.85rem;
+}
+
+.api-status {
+  font-size: 0.78rem;
+  font-family: "JetBrains Mono", monospace;
+  margin-bottom: 0.5rem;
+}
+
+.api-status.ok {
+  color: #4ade80;
+}
+
+.api-status.err {
+  color: #fb7185;
+}
+
+.api-json {
+  flex: 1;
+  overflow: auto;
+  margin: 0;
+  padding: 0.75rem;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+@media (max-width: 900px) {
+  .api-grid {
+    grid-template-columns: 1fr;
+  }
+}

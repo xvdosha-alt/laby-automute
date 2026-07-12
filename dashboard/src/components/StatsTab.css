@@ -1,0 +1,80 @@
+.stats-tab {
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.stats-charts {
+  min-height: 320px;
+}
+
+.empty {
+  color: var(--muted);
+  text-align: center;
+  padding: 3rem 1rem;
+  font-size: 0.95rem;
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.legend-item i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.nick-list {
+  list-style: none;
+}
+
+.nick-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid rgba(99, 179, 237, 0.08);
+}
+
+.nick-list-all {
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.nick-list-all li {
+  padding: 0.45rem 0;
+}
+
+.nick-rank {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.75rem;
+  color: var(--accent);
+  width: 2rem;
+}
+
+.nick-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.nick-count {
+  font-family: "JetBrains Mono", monospace;
+  color: var(--muted);
+  background: rgba(56, 189, 248, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}

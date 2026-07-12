@@ -1,0 +1,15 @@
+dist/
+dist.zip
+dashboard_dist/
+dashboard/node_modules/
+addons/**/build/
+addons/**/.gradle/
+**/__pycache__/
+**/*.pyc
+.DS_Store
+.env
+moderator/login_accounts.txt
+.venv/
+venv/
+*.egg-info/
+skr_app_id.txt

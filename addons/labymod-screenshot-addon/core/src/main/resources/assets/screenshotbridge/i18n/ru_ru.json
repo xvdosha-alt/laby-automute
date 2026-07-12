@@ -1,0 +1,9 @@
+{
+  "screenshotbridge": {
+    "settings": {
+      "cutdownToggleKey": {
+        "name": "Режим урезания (cutdown)"
+      }
+    }
+  }
+}

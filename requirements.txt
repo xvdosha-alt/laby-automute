@@ -1,0 +1,6 @@
+requests
+pillow
+colorama
+rapidocr-onnxruntime
+numpy
+flask
